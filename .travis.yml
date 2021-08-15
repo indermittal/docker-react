@@ -6,5 +6,6 @@ services:
  before_install:
   - docker build -f Dockerfile.dev -t inderm/docker-react .
 
+
  script:
   - docker run -e CI=true inderm/docker-react npm run test 
